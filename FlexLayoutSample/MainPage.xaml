@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FlexLayoutSample.MainPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="FlexLayout" x:Key="FlexLayoutStyle">
+                <Setter Property="BackgroundColor" Value="White"/>
+                <Setter Property="HorizontalOptions" Value="Start"/>
+                <Setter Property="Margin" Value="1"/>
+                <Setter Property="Direction" Value="Row"/>
+                <Setter Property="Wrap" Value="Wrap"/>
+                <Setter Property="AlignItems" Value="Start"/>
+                <Setter Property="JustifyContent" Value="Start"/>
+                <Setter Property="AlignContent" Value="Start"/>
+                <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+            </Style>
+
+            <Style TargetType="BoxView" x:Key="BoxViewStyle">
+                <Setter Property="Color" Value="Green"/>
+                <Setter Property="WidthRequest" Value="30"/>
+                <Setter Property="HeightRequest" Value="30"/>
+                <Setter Property="Margin" Value="4"/>
+            </Style>
+
+            <Style TargetType="Border" x:Key="BorderStyle">
+                <Setter Property="Stroke" Value="Yellow"/>
+                <Setter Property="StrokeThickness" Value="2"/>
+            </Style>
+            
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+
+    <Grid ColumnDefinitions="*,*,*,*,*,*,*" 
+          RowDefinitions="Auto,Auto,Auto,Auto" 
+          BackgroundColor="Black" 
+          ColumnSpacing="10"
+          RowSpacing="10">
+
+        <!-- Row 1 -->
+        <Border Grid.Row="0" Grid.Column="0" Style="{StaticResource BorderStyle}">
+            <FlexLayout  Style="{StaticResource FlexLayoutStyle}">
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+            </FlexLayout>
+        </Border>
+
+        <Border Grid.Row="0" Grid.Column="1" Style="{StaticResource BorderStyle}">
+            <FlexLayout  Style="{StaticResource FlexLayoutStyle}">
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+            </FlexLayout>
+        </Border>
+
+        <Border Grid.Row="0" Grid.Column="2" Style="{StaticResource BorderStyle}">
+            <FlexLayout  Style="{StaticResource FlexLayoutStyle}">
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+            </FlexLayout>
+        </Border>
+
+        <Border Grid.Row="0" Grid.Column="3" Style="{StaticResource BorderStyle}">
+            <FlexLayout  Style="{StaticResource FlexLayoutStyle}">
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+            </FlexLayout>
+        </Border>
+
+        <Border Grid.Row="0" Grid.Column="4" Style="{StaticResource BorderStyle}">
+            <FlexLayout  Style="{StaticResource FlexLayoutStyle}">
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+            </FlexLayout>
+        </Border>
+
+        <Border Grid.Row="0" Grid.Column="5" Style="{StaticResource BorderStyle}">
+            <FlexLayout  Style="{StaticResource FlexLayoutStyle}">
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+            </FlexLayout>
+        </Border>
+
+        <Border Grid.Row="0" Grid.Column="6" Style="{StaticResource BorderStyle}">
+            <FlexLayout  Style="{StaticResource FlexLayoutStyle}">
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+            </FlexLayout>
+        </Border>
+
+
+        <!-- Row 2 -->
+        <Border Grid.Row="1" Grid.Column="0" Style="{StaticResource BorderStyle}">
+            <FlexLayout  Style="{StaticResource FlexLayoutStyle}">
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+            </FlexLayout>
+        </Border>
+
+        <Border Grid.Row="1" Grid.Column="1" Style="{StaticResource BorderStyle}">
+            <FlexLayout  Style="{StaticResource FlexLayoutStyle}">
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+            </FlexLayout>
+        </Border>
+
+        <Border Grid.Row="0" Grid.Column="2" Style="{StaticResource BorderStyle}">
+            <FlexLayout  Style="{StaticResource FlexLayoutStyle}">
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+            </FlexLayout>
+        </Border>
+
+        <Border Grid.Row="1" Grid.Column="3" Style="{StaticResource BorderStyle}">
+            <FlexLayout  Style="{StaticResource FlexLayoutStyle}">
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+            </FlexLayout>
+        </Border>
+
+        <Border Grid.Row="1" Grid.Column="4" Style="{StaticResource BorderStyle}">
+            <FlexLayout  Style="{StaticResource FlexLayoutStyle}">
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+            </FlexLayout>
+        </Border>
+
+        <Border Grid.Row="1" Grid.Column="5" Style="{StaticResource BorderStyle}">
+            <FlexLayout  Style="{StaticResource FlexLayoutStyle}">
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+            </FlexLayout>
+        </Border>
+
+        <Border Grid.Row="1" Grid.Column="6" Style="{StaticResource BorderStyle}">
+            <FlexLayout  Style="{StaticResource FlexLayoutStyle}">
+                <BoxView Style="{StaticResource BoxViewStyle}"/>
+            </FlexLayout>
+        </Border>
+
+    </Grid>
+
+</ContentPage>
